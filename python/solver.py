@@ -61,7 +61,7 @@ def print_route(route, filename = 0):
             
 
 data = []        
-with open(sys.path[0] + '/nicelist.txt', 'r') as file:
+with open(sys.path[0] + '/../nicelist.txt', 'r') as file:
     for line in file:
         entry = line.strip().split(";")
         data.append((entry[0], int(entry[3]), (float(entry[1]), float(entry[2]))))
@@ -72,7 +72,7 @@ i = 1;
 for perm in itertools.permutations(data):
     score, route = evaluate_permutation(perm)
     if (score < best or best == -1): 
-        print("NEW BEST ROUTE FOUND ", str(i))
+        print("NEW BEST ROUTE FOUND ", str(i), best)
         i = i + 1
         best = score
         best_route = route
