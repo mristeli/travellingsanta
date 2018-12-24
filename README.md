@@ -1,4 +1,2 @@
 # travellingsanta
-Solver for https://traveling-santa.reaktor.com/
-
-(Ab)[U]sing python and functional patterns to guess the best route.
+Random code in Python and Clojure, which might or might not be related to solving this https://traveling-santa.reaktor.com/
